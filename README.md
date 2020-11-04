@@ -20,6 +20,10 @@ This theme is in early development. If you find some bugs, please submit a issue
 :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") ."> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 ```
 
+## Related Projects
+
+- https://github.com/ulwlu/elly-iterm2
+
 ## Thanks
 
 - [ayu-vim](https://github.com/ayu-theme/ayu-vim) - I use this theme for three years. I used the code as a reference.
