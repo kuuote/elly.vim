@@ -23,7 +23,7 @@ let s:palette.string    = "#798362"
 let s:palette.function  = "#8D7856"
 let s:palette.special   = "#9B9257"
 let s:palette.keyword   = "#8D7856"
-let s:palette.error     = "#B40003"
+let s:palette.error     = "#810002"
 let s:palette.accent    = "#9B9257"
 let s:palette.panel     = "#14191F"
 let s:palette.guide     = "#2D3640"
@@ -191,3 +191,10 @@ exe "hi! GitGutterAdd"          .s:fg_string     .s:bg_none        .s:fmt_none
 exe "hi! GitGutterChange"       .s:fg_tag        .s:bg_none        .s:fmt_none
 exe "hi! GitGutterDelete"       .s:fg_markup     .s:bg_none        .s:fmt_none
 exe "hi! GitGutterChangeDelete" .s:fg_function   .s:bg_none        .s:fmt_none
+
+" ale
+" ---------
+exe "hi! ALEError"       . s:fg_none . s:bg_error  .s:fmt_undb
+exe "hi! ALEErrorSign"   . s:fg_none . s:bg_error  .s:fmt_none
+exe "hi! ALEWarning"     . s:fg_none . s:bg_accent .s:fmt_undb
+exe "hi! ALEWarningSign" . s:fg_none . s:bg_accent .s:fmt_none
