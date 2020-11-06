@@ -30,8 +30,3 @@ This theme is in early development. If you find some bugs, please submit a issue
 
 - [ayu-vim](https://github.com/ayu-theme/ayu-vim) - I use this theme for three years. I used the code as a reference.
 - [vim-one](https://github.com/rakr/vim-one) - I used the code of airline autoload as a reference.
-
-## Articles
-
-- Trending #1 in Reddit/r/unixporn: https://www.reddit.com/r/unixporn/comments/jo36fx/rectangle_i_created_a_new_color_theme_which_is/
-- Trending #1 in Reddit/r/vimporn: https://www.reddit.com/r/vimporn/comments/jnx2oi/created_new_theme_ellyvim_which_is_nostalgic_and/
