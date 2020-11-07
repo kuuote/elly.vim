@@ -25,6 +25,7 @@ This theme is in early development. If you find some bugs, please submit a issue
 ## Related Projects
 
 - https://github.com/ulwlu/elly-iterm2
+- https://github.com/ulwlu/elly-tmux
 
 ## Thanks
 
