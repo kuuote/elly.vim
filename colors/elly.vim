@@ -88,7 +88,7 @@ exe "hi! Directory"     .s:fg_fg_idle     .s:bg_none        .s:fmt_none
 exe "hi! DiffAdd"       .s:fg_string      .s:bg_panel       .s:fmt_none
 exe "hi! DiffChange"    .s:fg_tag         .s:bg_panel       .s:fmt_none
 exe "hi! DiffText"      .s:fg_fg          .s:bg_panel       .s:fmt_none
-exe "hi! ErrorMsg"      .s:fg_fg          .s:bg_error       .s:fmt_stnd
+exe "hi! ErrorMsg"      .s:fg_error       .s:bg_none        .s:fmt_none
 exe "hi! EndOfBuffer"   .s:fg_bg          .s:bg_none        .s:fmt_none
 exe "hi! VertSplit"     .s:fg_comment     .s:bg_none        .s:fmt_none
 exe "hi! Folded"        .s:fg_fg_idle     .s:bg_panel       .s:fmt_none
@@ -127,7 +127,7 @@ exe "hi! Statement"       .s:fg_keyword   .s:bg_none        .s:fmt_none
 exe "hi! Operator"        .s:fg_fg        .s:bg_none        .s:fmt_none
 exe "hi! Keyword"         .s:fg_operator  .s:bg_none        .s:fmt_none
 exe "hi! PreProc"         .s:fg_special   .s:bg_none        .s:fmt_none
-exe "hi! Type"            .s:fg_accent       .s:bg_none        .s:fmt_none
+exe "hi! Type"            .s:fg_accent    .s:bg_none        .s:fmt_none
 exe "hi! Structure"       .s:fg_special   .s:bg_none        .s:fmt_none
 exe "hi! Special"         .s:fg_operator  .s:bg_none        .s:fmt_none
 exe "hi! Underlined"      .s:fg_tag       .s:bg_none        .s:fmt_undr
@@ -143,16 +143,16 @@ exe "hi! CursorLineConceal" .s:fg_guide   .s:bg_line        .s:fmt_none
 " Terminal: "{{{
 " ----------------------------------------------------------------------------
 if has("nvim")
-  let g:terminal_color_0 =  s:palette.bg
-  let g:terminal_color_1 =  s:palette.markup
-  let g:terminal_color_2 =  s:palette.string
-  let g:terminal_color_3 =  s:palette.accent
-  let g:terminal_color_4 =  s:palette.tag
-  let g:terminal_color_5 =  s:palette.constant
-  let g:terminal_color_6 =  s:palette.regexp
-  let g:terminal_color_7 =  "#FFFFFF"
-  let g:terminal_color_8 =  s:palette.fg_idle
-  let g:terminal_color_9 =  s:palette.error
+  let g:terminal_color_0  = s:palette.bg
+  let g:terminal_color_1  = s:palette.markup
+  let g:terminal_color_2  = s:palette.string
+  let g:terminal_color_3  = s:palette.accent
+  let g:terminal_color_4  = s:palette.tag
+  let g:terminal_color_5  = s:palette.constant
+  let g:terminal_color_6  = s:palette.regexp
+  let g:terminal_color_7  = "#FFFFFF"
+  let g:terminal_color_8  = s:palette.fg_idle
+  let g:terminal_color_9  = s:palette.error
   let g:terminal_color_10 = s:palette.string
   let g:terminal_color_11 = s:palette.accent
   let g:terminal_color_12 = s:palette.tag
@@ -178,12 +178,12 @@ endif
 " ----------------------------------------------------------------------------
 " NerdTree
 " ---------
-exe "hi! NERDTreeOpenable"          .s:fg_fg_idle     .s:bg_none        .s:fmt_none
-exe "hi! NERDTreeClosable"          .s:fg_accent      .s:bg_none        .s:fmt_none
-exe "hi! NERDTreeUp"                .s:fg_fg_idle    .s:bg_none        .s:fmt_none
-exe "hi! NERDTreeDir"               .s:fg_function   .s:bg_none        .s:fmt_none
-exe "hi! NERDTreeFile"              .s:fg_none       .s:bg_none        .s:fmt_none
-exe "hi! NERDTreeDirSlash"          .s:fg_accent     .s:bg_none        .s:fmt_none
+exe "hi! NERDTreeOpenable"      .s:fg_fg_idle    .s:bg_none        .s:fmt_none
+exe "hi! NERDTreeClosable"      .s:fg_accent     .s:bg_none        .s:fmt_none
+exe "hi! NERDTreeUp"            .s:fg_fg_idle    .s:bg_none        .s:fmt_none
+exe "hi! NERDTreeDir"           .s:fg_function   .s:bg_none        .s:fmt_none
+exe "hi! NERDTreeFile"          .s:fg_none       .s:bg_none        .s:fmt_none
+exe "hi! NERDTreeDirSlash"      .s:fg_accent     .s:bg_none        .s:fmt_none
 
 " GitGutter
 " ---------
@@ -194,7 +194,7 @@ exe "hi! GitGutterChangeDelete" .s:fg_function   .s:bg_none        .s:fmt_none
 
 " ale
 " ---------
-exe "hi! ALEError"       . s:fg_none . s:bg_error  .s:fmt_undb
-exe "hi! ALEErrorSign"   . s:fg_none . s:bg_error  .s:fmt_none
-exe "hi! ALEWarning"     . s:fg_none . s:bg_accent .s:fmt_undb
-exe "hi! ALEWarningSign" . s:fg_none . s:bg_accent .s:fmt_none
+exe "hi! ALEError"              . s:fg_none      .s:bg_error       .s:fmt_undb
+exe "hi! ALEErrorSign"          . s:fg_none      .s:bg_error       .s:fmt_none
+exe "hi! ALEWarning"            . s:fg_none      .s:bg_accent      .s:fmt_undb
+exe "hi! ALEWarningSign"        . s:fg_none      .s:bg_accent      .s:fmt_none
