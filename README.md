@@ -37,6 +37,14 @@ let g:lightline = {
       \ }
 ```
 
+### airline
+
+set below in vimrc
+```vim
+let g:airline_theme='elly'
+```
+
+
 ## Related Projects
 
 - https://github.com/ulwlu/elly-iterm2
