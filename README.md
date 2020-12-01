@@ -22,13 +22,11 @@ This theme is in early development. If you find some bugs, please submit a issue
 
 ## Plugins
 
-elly.vim is compatiable with Nerdtree, Airline, Lightline, and etc.
+elly.vim is compatiable with Nerdtree, Airline, Lightline, coc.nvim,  and etc.
 
-<img alt="elly.vim" src="https://user-images.githubusercontent.com/41639488/100525315-14c9eb00-3203-11eb-8cc9-ad0116d800c1.png">
+![elly.vim](https://user-images.githubusercontent.com/41639488/100792090-771e2800-345d-11eb-9843-afd5a08e42e6.png)
 
 ![elly.vim](https://user-images.githubusercontent.com/41639488/100526196-fc110380-3209-11eb-913a-22adfa3c19ab.png)
-
-<img alt="elly.vim" src="https://user-images.githubusercontent.com/41639488/98116862-3d084780-1eec-11eb-9d3c-6937554cb285.png">
 
 ### lightline
 
