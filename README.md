@@ -24,8 +24,7 @@ This theme is in early development. If you find some bugs, please submit a issue
 
 elly.vim is compatiable with Nerdtree, Airline, Lightline, coc.nvim,  and etc.
 
-<img alt="elly.vim" src="https://user-images.githubusercontent.com/41639488/100796896-ad12da80-3464-11eb-90ec-11bdb92cb488.png">
-
+<img alt="elly.vim" src="https://user-images.githubusercontent.com/41639488/100799586-a5553500-3468-11eb-99a0-7254a606229f.png">
 
 ![elly.vim](https://user-images.githubusercontent.com/41639488/100526196-fc110380-3209-11eb-913a-22adfa3c19ab.png)
 
