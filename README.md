@@ -60,4 +60,4 @@ let g:airline_theme='elly'
 ## Articles
 
 - Trending #1 in Reddit/r/unixporn: https://www.reddit.com/r/unixporn/comments/jo36fx/rectangle_i_created_a_new_color_theme_which_is/
-- Trending #1 in Reddit/r/vimporn: https://www.reddit.com/r/vimporn/comments/jnx2oi/created_new_theme_ellyvim_which_is_nostalgic_and/
+- Trending #1 in Reddit/r/vim: https://www.reddit.com/r/vim/comments/k2quxw/created_a_new_theme_ellyvim_which_is_brown_and
