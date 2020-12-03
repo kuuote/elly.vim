@@ -194,7 +194,7 @@ exe "hi! GitGutterChangeDelete" .s:fg_function   .s:bg_none        .s:fmt_none
 
 " ale
 " ---------
-exe "hi! ALEError"              . s:fg_none      .s:bg_error       .s:fmt_undb
+exe "hi! ALEError"              . s:fg_none      .s:bg_none        .s:fmt_curl
 exe "hi! ALEErrorSign"          . s:fg_none      .s:bg_error       .s:fmt_none
-exe "hi! ALEWarning"            . s:fg_none      .s:bg_accent      .s:fmt_undb
+exe "hi! ALEWarning"            . s:fg_none      .s:bg_none        .s:fmt_curl
 exe "hi! ALEWarningSign"        . s:fg_none      .s:bg_accent      .s:fmt_none
