@@ -147,31 +147,31 @@ if has("nvim")
   let g:terminal_color_1  = s:palette.markup
   let g:terminal_color_2  = s:palette.string
   let g:terminal_color_3  = s:palette.accent
-  let g:terminal_color_4  = s:palette.tag
+  let g:terminal_color_4  = "#63768A"
   let g:terminal_color_5  = s:palette.constant
   let g:terminal_color_6  = s:palette.regexp
-  let g:terminal_color_7  = "#FFFFFF"
-  let g:terminal_color_8  = s:palette.fg_idle
-  let g:terminal_color_9  = s:palette.error
+  let g:terminal_color_7  = s:palette.fg
+  let g:terminal_color_8  = "#868b8d"
+  let g:terminal_color_9  = s:palette.markup
   let g:terminal_color_10 = s:palette.string
   let g:terminal_color_11 = s:palette.accent
-  let g:terminal_color_12 = s:palette.tag
+  let g:terminal_color_12 = "#63768A"
   let g:terminal_color_13 = s:palette.constant
   let g:terminal_color_14 = s:palette.regexp
-  let g:terminal_color_15 = s:palette.comment
-  let g:terminal_color_background = g:terminal_color_0
-  let g:terminal_color_foreground = s:palette.fg
+  let g:terminal_color_15 = s:palette.fg
+  let g:terminal_color_backround = g:terminal_color_0
+  let g:terminal_color_foreground = g:terminal_color_7
 else
   let g:terminal_ansi_colors =  [s:palette.bg,      s:palette.markup]
   let g:terminal_ansi_colors += [s:palette.string,  s:palette.accent]
-  let g:terminal_ansi_colors += [s:palette.tag,     s:palette.constant]
-  let g:terminal_ansi_colors += [s:palette.regexp,  "#FFFFFF"]
-  let g:terminal_ansi_colors += [s:palette.fg_idle, s:palette.error]
+  let g:terminal_ansi_colors += ["#63768A",         s:palette.constant]
+  let g:terminal_ansi_colors += [s:palette.regexp,  s:palette.fg]
+  let g:terminal_ansi_colors += ["#868b8d",         s:palette.markup]
   let g:terminal_ansi_colors += [s:palette.string,  s:palette.accent]
-  let g:terminal_ansi_colors += [s:palette.tag,     s:palette.constant]
-  let g:terminal_ansi_colors += [s:palette.regexp,  s:palette.comment]
+  let g:terminal_ansi_colors += ["#63768A",         s:palette.constant]
+  let g:terminal_ansi_colors += [s:palette.regexp,  s:palette.fg]
 endif
-"}}}
+" }}}
 
 
 " Plugins: "{{{
