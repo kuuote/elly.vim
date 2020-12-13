@@ -32,7 +32,7 @@ let s:palette.selection = "#253340"
 let s:palette.fg        = "#c0c7ca"
 let s:palette.fg_idle   = "#3E4B59"
 let s:palette.diffgreen = "#009900"
-let s:palette.diffyell  = "#9B9257"
+let s:palette.diffyell  = "#BBBB00"
 let s:palette.diffred   = "#FF2222"
 "}}}
 
