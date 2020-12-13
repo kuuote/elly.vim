@@ -31,6 +31,9 @@ let s:palette.line      = "#151A1E"
 let s:palette.selection = "#253340"
 let s:palette.fg        = "#c0c7ca"
 let s:palette.fg_idle   = "#3E4B59"
+let s:palette.diffgreen = "#009900"
+let s:palette.diffyell  = "#9B9257"
+let s:palette.diffred   = "#FF2222"
 "}}}
 
 
@@ -93,7 +96,7 @@ exe "hi! EndOfBuffer"   .s:fg_bg          .s:bg_none        .s:fmt_none
 exe "hi! VertSplit"     .s:fg_comment     .s:bg_none        .s:fmt_none
 exe "hi! Folded"        .s:fg_fg_idle     .s:bg_panel       .s:fmt_none
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_panel       .s:fmt_none
-exe "hi! SignColumn"    .s:fg_none        .s:bg_panel       .s:fmt_none
+exe "hi! SignColumn"    .s:fg_none        .s:bg_bg          .s:fmt_none
 exe "hi! MatchParen"    .s:fg_fg          .s:bg_bg          .s:fmt_undr
 exe "hi! ModeMsg"       .s:fg_string      .s:bg_none        .s:fmt_none
 exe "hi! MoreMsg"       .s:fg_string      .s:bg_none        .s:fmt_none
@@ -198,3 +201,9 @@ exe "hi! ALEError"              . s:fg_none      .s:bg_none        .s:fmt_curl
 exe "hi! ALEErrorSign"          . s:fg_none      .s:bg_error       .s:fmt_none
 exe "hi! ALEWarning"            . s:fg_none      .s:bg_none        .s:fmt_curl
 exe "hi! ALEWarningSign"        . s:fg_none      .s:bg_accent      .s:fmt_none
+
+" ale
+" ---------
+exe "hi! CocDiffAdd"            . s:fg_diffgreen .s:bg_none        .s:fmt_none
+exe "hi! CocDiffChange"         . s:fg_diffyell  .s:bg_none        .s:fmt_none
+exe "hi! CocDiffDelete"         . s:fg_diffred   .s:bg_none        .s:fmt_none
