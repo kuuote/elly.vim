@@ -31,9 +31,11 @@ let s:palette.line      = "#151A1E"
 let s:palette.selection = "#253340"
 let s:palette.fg        = "#c0c7ca"
 let s:palette.fg_idle   = "#3E4B59"
-let s:palette.diffgreen = "#009900"
-let s:palette.diffyell  = "#BBBB00"
-let s:palette.diffred   = "#FF2222"
+let s:palette.diffg     = "#012800"
+let s:palette.diffr     = "#340001"
+let s:palette.cdiffg    = "#009900"
+let s:palette.cdiffy    = "#BBBB00"
+let s:palette.cdiffr    = "#FF2222"
 "}}}
 
 
@@ -122,24 +124,28 @@ exe "hi! WarningMsg"    .s:fg_error       .s:bg_none        .s:fmt_none
 
 " Generic Syntax Highlighting: "{{{
 " ----------------------------------------------------------------------------
-exe "hi! Comment"         .s:fg_comment   .s:bg_none        .s:fmt_none
-exe "hi! String"          .s:fg_string    .s:bg_none        .s:fmt_none
-exe "hi! Identifier"      .s:fg_tag       .s:bg_none        .s:fmt_none
-exe "hi! Function"        .s:fg_function  .s:bg_none        .s:fmt_none
-exe "hi! Statement"       .s:fg_keyword   .s:bg_none        .s:fmt_none
-exe "hi! Operator"        .s:fg_fg        .s:bg_none        .s:fmt_none
-exe "hi! Keyword"         .s:fg_operator  .s:bg_none        .s:fmt_none
-exe "hi! PreProc"         .s:fg_special   .s:bg_none        .s:fmt_none
-exe "hi! Type"            .s:fg_accent    .s:bg_none        .s:fmt_none
-exe "hi! Structure"       .s:fg_special   .s:bg_none        .s:fmt_none
-exe "hi! Special"         .s:fg_operator  .s:bg_none        .s:fmt_none
-exe "hi! Underlined"      .s:fg_tag       .s:bg_none        .s:fmt_undr
-exe "hi! Ignore"          .s:fg_none      .s:bg_none        .s:fmt_none
-exe "hi! Error"           .s:fg_fg        .s:bg_error       .s:fmt_none
-exe "hi! Todo"            .s:fg_markup    .s:bg_none        .s:fmt_none
-exe "hi! qfLineNr"        .s:fg_keyword   .s:bg_none        .s:fmt_none
-exe "hi! Conceal"         .s:fg_guide     .s:bg_none        .s:fmt_none
-exe "hi! CursorLineConceal" .s:fg_guide   .s:bg_line        .s:fmt_none
+exe "hi! Comment"           .s:fg_comment   .s:bg_none        .s:fmt_none
+exe "hi! String"            .s:fg_string    .s:bg_none        .s:fmt_none
+exe "hi! Identifier"        .s:fg_tag       .s:bg_none        .s:fmt_none
+exe "hi! Function"          .s:fg_function  .s:bg_none        .s:fmt_none
+exe "hi! Statement"         .s:fg_keyword   .s:bg_none        .s:fmt_none
+exe "hi! Operator"          .s:fg_fg        .s:bg_none        .s:fmt_none
+exe "hi! Keyword"           .s:fg_operator  .s:bg_none        .s:fmt_none
+exe "hi! PreProc"           .s:fg_special   .s:bg_none        .s:fmt_none
+exe "hi! Type"              .s:fg_accent    .s:bg_none        .s:fmt_none
+exe "hi! Structure"         .s:fg_special   .s:bg_none        .s:fmt_none
+exe "hi! Special"           .s:fg_operator  .s:bg_none        .s:fmt_none
+exe "hi! Underlined"        .s:fg_tag       .s:bg_none        .s:fmt_undr
+exe "hi! Ignore"            .s:fg_none      .s:bg_none        .s:fmt_none
+exe "hi! Error"             .s:fg_fg        .s:bg_error       .s:fmt_none
+exe "hi! Todo"              .s:fg_markup    .s:bg_none        .s:fmt_none
+exe "hi! qfLineNr"          .s:fg_keyword   .s:bg_none        .s:fmt_none
+exe "hi! Conceal"           .s:fg_guide     .s:bg_none        .s:fmt_none
+exe "hi! CursorLineConceal" .s:fg_guide     .s:bg_line        .s:fmt_none
+exe "hi! DiffAdd"           .s:fg_none      .s:bg_diffg       .s:fmt_none
+exe "hi! DiffText"          .s:fg_none      .s:bg_diffg       .s:fmt_none
+exe "hi! DiffChange"        .s:fg_none      .s:bg_diffg       .s:fmt_none
+exe "hi! DiffDelete"        .s:fg_diffr     .s:bg_diffr       .s:fmt_none
 "}}}
 
 
@@ -202,8 +208,8 @@ exe "hi! ALEErrorSign"          . s:fg_none      .s:bg_error       .s:fmt_none
 exe "hi! ALEWarning"            . s:fg_none      .s:bg_none        .s:fmt_curl
 exe "hi! ALEWarningSign"        . s:fg_none      .s:bg_accent      .s:fmt_none
 
-" ale
+" coc-git
 " ---------
-exe "hi! CocDiffAdd"            . s:fg_diffgreen .s:bg_none        .s:fmt_none
-exe "hi! CocDiffChange"         . s:fg_diffyell  .s:bg_none        .s:fmt_none
-exe "hi! CocDiffDelete"         . s:fg_diffred   .s:bg_none        .s:fmt_none
+exe "hi! CocDiffAdd"            . s:fg_cdiffg    .s:bg_none        .s:fmt_none
+exe "hi! CocDiffChange"         . s:fg_cdiffy    .s:bg_none        .s:fmt_none
+exe "hi! CocDiffDelete"         . s:fg_cdiffr    .s:bg_none        .s:fmt_none
