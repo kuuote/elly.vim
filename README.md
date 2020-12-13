@@ -46,6 +46,16 @@ set below in vimrc
 let g:airline_theme='elly'
 ```
 
+### coc-git
+
+set below in coc-settings.json
+```json
+	"git.addedSign.hlGroup": "CocDiffAdd",
+	"git.changedSign.hlGroup": "CocDiffChange",
+	"git.removedSign.hlGroup": "CocDiffDelete",
+	"git.topRemovedSign.hlGroup": "CocDiffDelete",
+	"git.changeRemovedSign.hlGroup": "CocDiffDelete",
+```
 
 ## Related Projects
 
