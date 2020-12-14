@@ -13,7 +13,7 @@ let g:colors_name = "elly"
 " ----------------------------------------------------------------------------
 let s:palette = {}
 let s:palette.bg        = "#111a1f"
-let s:palette.comment   = "#5C6062"
+let s:palette.comment   = "#797E80"
 let s:palette.markup    = "#8D7856"
 let s:palette.constant  = "#738C9C"
 let s:palette.operator  = "#738C9C"
@@ -88,7 +88,7 @@ exe "hi! Constant"      .s:fg_accent      .s:bg_line        .s:fmt_none
 exe "hi! CursorColumn"  .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorLine"    .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorLineNr"  .s:fg_accent      .s:bg_line        .s:fmt_none
-exe "hi! LineNr"        .s:fg_fg_idle     .s:bg_none        .s:fmt_none
+exe "hi! LineNr"        .s:fg_guide       .s:bg_none        .s:fmt_none
 exe "hi! Directory"     .s:fg_fg_idle     .s:bg_none        .s:fmt_none
 exe "hi! DiffAdd"       .s:fg_string      .s:bg_panel       .s:fmt_none
 exe "hi! DiffChange"    .s:fg_tag         .s:bg_panel       .s:fmt_none
