@@ -13,13 +13,6 @@
 3. Activate by `colorscheme elly`
 4. Use `set termguicolors` as well
 
-## Issues
-This theme is in early development. If you find some bugs, please submit a issue. If some highlight is strange, please submit an issue with a result of a command below.
-
-```
-:echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") ."> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-```
-
 ## Plugins
 
 elly.vim is compatiable with Nerdtree, Airline, Lightline, coc.nvim, fzf-preview, and etc.
@@ -61,6 +54,7 @@ set below in coc-settings.json
 
 - https://github.com/ulwlu/elly-iterm2
 - https://github.com/ulwlu/elly-tmux
+- https://github.com/ulwlu/elly-simple-bar
 
 ## Thanks
 
