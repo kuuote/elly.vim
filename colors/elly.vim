@@ -13,7 +13,7 @@ let g:colors_name = "elly"
 " ----------------------------------------------------------------------------
 let s:palette = {}
 let s:palette.bg        = "#111a1f"
-let s:palette.comment   = "#5A5A5A"
+let s:palette.comment   = "#545759"
 let s:palette.markup    = "#8D7856"
 let s:palette.constant  = "#738C9C"
 let s:palette.operator  = "#738C9C"
