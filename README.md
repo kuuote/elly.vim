@@ -55,6 +55,7 @@ set below in coc-settings.json
 - https://github.com/ulwlu/elly-iterm2
 - https://github.com/ulwlu/elly-tmux
 - https://github.com/ulwlu/elly-simple-bar
+- https://github.com/ulwlu/elly-chrome
 
 ## Thanks
 
