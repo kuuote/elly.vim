@@ -33,9 +33,9 @@ let s:palette.fg        = "#ACB3B5"
 let s:palette.fg_idle   = "#3E4B59"
 let s:palette.diffg     = "#012800"
 let s:palette.diffr     = "#340001"
-let s:palette.cdiffg    = "#009900"
-let s:palette.cdiffy    = "#BBBB00"
-let s:palette.cdiffr    = "#FF2222"
+let s:palette.cdiffg    = "#037500"
+let s:palette.cdiffy    = "#817e00"
+let s:palette.cdiffr    = "#810002"
 "}}}
 
 
