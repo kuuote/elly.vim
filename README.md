@@ -53,6 +53,7 @@ set below in coc-settings.json
 ## Related Projects
 
 - https://github.com/ulwlu/elly-iterm2
+- https://github.com/ulwlu/elly-vscode
 - https://github.com/ulwlu/elly-tmux
 - https://github.com/ulwlu/elly-simple-bar
 - https://github.com/ulwlu/elly-chrome
