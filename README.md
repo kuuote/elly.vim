@@ -52,11 +52,12 @@ set below in coc-settings.json
 
 ## Related Projects
 
-- https://github.com/ulwlu/elly-iterm2
-- https://github.com/ulwlu/elly-vscode
-- https://github.com/ulwlu/elly-tmux
-- https://github.com/ulwlu/elly-simple-bar
-- https://github.com/ulwlu/elly-chrome
+- [elly-iTerm2](https://github.com/ulwlu/elly-iterm2)
+- [elly-VSCode](https://github.com/ulwlu/elly-vscode)
+- [elly-tmux](https://github.com/ulwlu/elly-tmux)
+- [elly-kitty](https://github.com/ulwlu/elly-kitty) - This is made by [Benoit Pingris](https://github.com/BenoitPingris).
+- [elly-simple-bar](https://github.com/ulwlu/elly-simple-bar)
+- [elly-chrome](https://github.com/ulwlu/elly-chrome)
 
 ## Thanks
 
