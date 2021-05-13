@@ -12,6 +12,7 @@ let g:colors_name = "elly"
 " Palettes:"{{{
 " ----------------------------------------------------------------------------
 let s:palette = {}
+let s:termmode = "gui"
 let s:palette.bg        = "#111a1f"
 let s:palette.comment   = "#545759"
 let s:palette.markup    = "#8D7856"
@@ -31,23 +32,55 @@ let s:palette.line      = "#151A1E"
 let s:palette.selection = "#253340"
 let s:palette.fg        = "#ACB3B5"
 let s:palette.fg_idle   = "#3E4B59"
+let s:palette.termblue  = "#63768A"
+let s:palette.termgray  = "#868b8d"
 let s:palette.diffg     = "#012800"
 let s:palette.diffr     = "#340001"
 let s:palette.cdiffg    = "#037500"
 let s:palette.cdiffy    = "#817e00"
 let s:palette.cdiffr    = "#810002"
+if (exists("g:elly_termmode") && g:elly_termmode == "cterm")
+  set notermguicolors
+  let s:termmode = "cterm"
+  let s:palette.bg        = "233"
+  let s:palette.comment   = "240"
+  let s:palette.markup    = "94"
+  let s:palette.constant  = "111"
+  let s:palette.operator  = "111"
+  let s:palette.tag       = "94"
+  let s:palette.regexp    = "75"
+  let s:palette.string    = "109"
+  let s:palette.function  = "94"
+  let s:palette.special   = "142"
+  let s:palette.keyword   = "94"
+  let s:palette.error     = "1"
+  let s:palette.accent    = "142"
+  let s:palette.panel     = "234"
+  let s:palette.guide     = "235"
+  let s:palette.line      = "234"
+  let s:palette.selection = "235"
+  let s:palette.fg        = "248"
+  let s:palette.fg_idle   = "237"
+  let s:palette.termblue  = "117"
+  let s:palette.termgray  = "245"
+  let s:palette.diffg     = "232"
+  let s:palette.diffr     = "52"
+  let s:palette.cdiffg    = "2"
+  let s:palette.cdiffy    = "3"
+  let s:palette.cdiffr    = "1"
+endif
 "}}}
 
 
 " Highlighting Primitives:"{{{
 " ----------------------------------------------------------------------------
 function! s:build_prim(hi_elem, field)
-  let l:vname = "s:" . a:hi_elem . "_" . a:field " s:bg_gray
-  let l:gui_assign = "gui".a:hi_elem."=".s:palette[a:field] " guibg=...
+  let l:vname = "s:" . a:hi_elem . "_" . a:field "
+  let l:gui_assign = s:termmode . a:hi_elem . "=" . s:palette[a:field]
   exe "let " . l:vname . " = ' " . l:gui_assign . "'"
 endfunction
-let s:bg_none = ' guibg=NONE ctermbg=NONE'
-let s:fg_none = ' guifg=NONE ctermfg=NONE'
+let s:bg_none = " ".s:termmode."bg=NONE"
+let s:fg_none = " ".s:termmode."fg=NONE"
 for [key_name, d_value] in items(s:palette)
   call s:build_prim('bg', key_name)
   call s:build_prim('fg', key_name)
@@ -156,29 +189,29 @@ if has("nvim")
   let g:terminal_color_1  = s:palette.markup
   let g:terminal_color_2  = s:palette.string
   let g:terminal_color_3  = s:palette.accent
-  let g:terminal_color_4  = "#63768A"
+  let g:terminal_color_4  = s:palette.termblue
   let g:terminal_color_5  = s:palette.constant
   let g:terminal_color_6  = s:palette.regexp
   let g:terminal_color_7  = s:palette.fg
-  let g:terminal_color_8  = "#868b8d"
+  let g:terminal_color_8  = s:palette.termgray
   let g:terminal_color_9  = s:palette.markup
   let g:terminal_color_10 = s:palette.string
   let g:terminal_color_11 = s:palette.accent
-  let g:terminal_color_12 = "#63768A"
+  let g:terminal_color_12 = s:palette.termblue
   let g:terminal_color_13 = s:palette.constant
   let g:terminal_color_14 = s:palette.regexp
   let g:terminal_color_15 = s:palette.fg
   let g:terminal_color_backround = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_7
 else
-  let g:terminal_ansi_colors =  [s:palette.bg,      s:palette.markup]
-  let g:terminal_ansi_colors += [s:palette.string,  s:palette.accent]
-  let g:terminal_ansi_colors += ["#63768A",         s:palette.constant]
-  let g:terminal_ansi_colors += [s:palette.regexp,  s:palette.fg]
-  let g:terminal_ansi_colors += ["#868b8d",         s:palette.markup]
-  let g:terminal_ansi_colors += [s:palette.string,  s:palette.accent]
-  let g:terminal_ansi_colors += ["#63768A",         s:palette.constant]
-  let g:terminal_ansi_colors += [s:palette.regexp,  s:palette.fg]
+  let g:terminal_ansi_colors =  [s:palette.bg,       s:palette.markup]
+  let g:terminal_ansi_colors += [s:palette.string,   s:palette.accent]
+  let g:terminal_ansi_colors += [s:palette.termblue, s:palette.constant]
+  let g:terminal_ansi_colors += [s:palette.regexp,   s:palette.fg]
+  let g:terminal_ansi_colors += [s:palette.termgray, s:palette.markup]
+  let g:terminal_ansi_colors += [s:palette.string,   s:palette.accent]
+  let g:terminal_ansi_colors += [s:palette.termblue, s:palette.constant]
+  let g:terminal_ansi_colors += [s:palette.regexp,   s:palette.fg]
 endif
 " }}}
 
