@@ -59,6 +59,18 @@ set below in coc-settings.json
 - [elly-simple-bar](https://github.com/ulwlu/elly-simple-bar)
 - [elly-chrome](https://github.com/ulwlu/elly-chrome)
 
+## Warning
+
+If your terminal becomes like below,
+
+![elly.vim](https://user-images.githubusercontent.com/41639488/118059208-ef085b00-b3ca-11eb-8233-d2940c9e6dc3.png)
+
+This means your terminal doesn't support gui colors. In this case, please set below in vimrc before you set `colorscheme elly`.
+
+```vim
+let g:elly_termmode="cterm"
+```
+
 ## Thanks
 
 - [ayu-vim](https://github.com/ayu-theme/ayu-vim) - I use this theme for three years. I used the code as a reference.
