@@ -21,6 +21,7 @@ endif
 
 
 " Palettes:"{{{
+" - light mode not implemented yet, but in progress
 " ----------------------------------------------------------------------------
 let s:palette = {}
 let s:palette.bg        = {"gui": {"dark": "#111a1f", "light": "#111a1f"}, "cterm": {"dark": "232", "light": "232"}}
@@ -119,7 +120,7 @@ exe "hi! NonText"       .s:fg_guide       .s:bg_none        .s:fmt_none
 exe "hi! Pmenu"         .s:fg_fg          .s:bg_selection   .s:fmt_none
 exe "hi! PmenuSel"      .s:fg_fg          .s:bg_selection   .s:fmt_revr
 exe "hi! Question"      .s:fg_string      .s:bg_none        .s:fmt_none
-exe "hi! Search"        .s:fg_bg          .s:bg_special     .s:fmt_none
+exe "hi! Search"        .s:fg_none        .s:bg_guide       .s:fmt_none
 exe "hi! SpecialKey"    .s:fg_selection   .s:bg_none        .s:fmt_none
 exe "hi! SpellCap"      .s:fg_tag         .s:bg_none        .s:fmt_undr
 exe "hi! SpellLocal"    .s:fg_keyword     .s:bg_none        .s:fmt_undr
@@ -130,7 +131,7 @@ exe "hi! StatusLineNC"  .s:fg_fg_idle     .s:bg_panel       .s:fmt_none
 exe "hi! WildMenu"      .s:fg_bg          .s:bg_markup      .s:fmt_none
 exe "hi! TabLine"       .s:fg_fg          .s:bg_panel       .s:fmt_revr
 exe "hi! Title"         .s:fg_constant    .s:bg_none        .s:fmt_none
-exe "hi! Visual"        .s:fg_accent      .s:bg_guide       .s:fmt_none
+exe "hi! Visual"        .s:fg_none        .s:bg_guide       .s:fmt_none
 exe "hi! WarningMsg"    .s:fg_error       .s:bg_none        .s:fmt_none
 "}}}
 
