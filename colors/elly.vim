@@ -6,69 +6,49 @@ if exists("syntax_on")
   syntax reset
 endif
 let g:colors_name = "elly"
+
+let s:termmode = "gui"
+if (exists("g:elly_termmode") && g:elly_termmode == "cterm")
+  set notermguicolors
+  let s:termmode = "cterm"
+endif
+
+let s:colormode = "dark"
+if (exists("g:elly_colormode") && g:elly_colormode == "light")
+  let s:colormode = "light"
+endif
 "}}}
 
 
 " Palettes:"{{{
 " ----------------------------------------------------------------------------
 let s:palette = {}
-let s:termmode = "gui"
-let s:palette.bg        = "#111a1f"
-let s:palette.comment   = "#545759"
-let s:palette.markup    = "#8D7856"
-let s:palette.constant  = "#738C9C"
-let s:palette.operator  = "#738C9C"
-let s:palette.tag       = "#8D7856"
-let s:palette.regexp    = "#6998B3"
-let s:palette.string    = "#798362"
-let s:palette.function  = "#8D7856"
-let s:palette.special   = "#9B9257"
-let s:palette.keyword   = "#8D7856"
-let s:palette.error     = "#810002"
-let s:palette.accent    = "#9B9257"
-let s:palette.panel     = "#14191F"
-let s:palette.guide     = "#2D3640"
-let s:palette.line      = "#151A1E"
-let s:palette.selection = "#253340"
-let s:palette.fg        = "#ACB3B5"
-let s:palette.fg_idle   = "#3E4B59"
-let s:palette.termblue  = "#63768A"
-let s:palette.termgray  = "#868b8d"
-let s:palette.diffg     = "#012800"
-let s:palette.diffr     = "#340001"
-let s:palette.cdiffg    = "#037500"
-let s:palette.cdiffy    = "#817e00"
-let s:palette.cdiffr    = "#810002"
-if (exists("g:elly_termmode") && g:elly_termmode == "cterm")
-  set notermguicolors
-  let s:termmode = "cterm"
-  let s:palette.bg        = "232"
-  let s:palette.comment   = "240"
-  let s:palette.markup    = "101"
-  let s:palette.constant  = "23"
-  let s:palette.operator  = "23"
-  let s:palette.tag       = "101"
-  let s:palette.regexp    = "75"
-  let s:palette.string    = "66"
-  let s:palette.function  = "101"
-  let s:palette.special   = "100"
-  let s:palette.keyword   = "101"
-  let s:palette.error     = "1"
-  let s:palette.accent    = "100"
-  let s:palette.panel     = "234"
-  let s:palette.guide     = "235"
-  let s:palette.line      = "234"
-  let s:palette.selection = "235"
-  let s:palette.fg        = "248"
-  let s:palette.fg_idle   = "237"
-  let s:palette.termblue  = "117"
-  let s:palette.termgray  = "245"
-  let s:palette.diffg     = "232"
-  let s:palette.diffr     = "52"
-  let s:palette.cdiffg    = "2"
-  let s:palette.cdiffy    = "3"
-  let s:palette.cdiffr    = "1"
-endif
+let s:palette.bg        = {"gui": {"dark": "#111a1f", "light": "#111a1f"}, "cterm": {"dark": "232", "light": "232"}}
+let s:palette.comment   = {"gui": {"dark": "#545759", "light": "#545759"}, "cterm": {"dark": "240", "light": "240"}}
+let s:palette.markup    = {"gui": {"dark": "#8D7856", "light": "#8D7856"}, "cterm": {"dark": "101", "light": "101"}}
+let s:palette.constant  = {"gui": {"dark": "#738C9C", "light": "#738C9C"}, "cterm": {"dark": "23",  "light": "23"}}
+let s:palette.operator  = {"gui": {"dark": "#738C9C", "light": "#738C9C"}, "cterm": {"dark": "23",  "light": "23"}}
+let s:palette.tag       = {"gui": {"dark": "#8D7856", "light": "#8D7856"}, "cterm": {"dark": "101", "light": "101"}}
+let s:palette.regexp    = {"gui": {"dark": "#6998B3", "light": "#6998B3"}, "cterm": {"dark": "75",  "light": "75"}}
+let s:palette.string    = {"gui": {"dark": "#798362", "light": "#798362"}, "cterm": {"dark": "66",  "light": "66"}}
+let s:palette.function  = {"gui": {"dark": "#8D7856", "light": "#8D7856"}, "cterm": {"dark": "101", "light": "101"}}
+let s:palette.special   = {"gui": {"dark": "#9B9257", "light": "#9B9257"}, "cterm": {"dark": "100", "light": "100"}}
+let s:palette.keyword   = {"gui": {"dark": "#8D7856", "light": "#8D7856"}, "cterm": {"dark": "101", "light": "101"}}
+let s:palette.error     = {"gui": {"dark": "#810002", "light": "#810002"}, "cterm": {"dark": "1",   "light": "1"}}
+let s:palette.accent    = {"gui": {"dark": "#9B9257", "light": "#9B9257"}, "cterm": {"dark": "100", "light": "100"}}
+let s:palette.panel     = {"gui": {"dark": "#14191F", "light": "#14191F"}, "cterm": {"dark": "234", "light": "234"}}
+let s:palette.guide     = {"gui": {"dark": "#2D3640", "light": "#2D3640"}, "cterm": {"dark": "235", "light": "235"}}
+let s:palette.line      = {"gui": {"dark": "#151A1E", "light": "#151A1E"}, "cterm": {"dark": "234", "light": "234"}}
+let s:palette.selection = {"gui": {"dark": "#253340", "light": "#253340"}, "cterm": {"dark": "235", "light": "235"}}
+let s:palette.fg        = {"gui": {"dark": "#ACB3B5", "light": "#ACB3B5"}, "cterm": {"dark": "248", "light": "248"}}
+let s:palette.fg_idle   = {"gui": {"dark": "#3E4B59", "light": "#3E4B59"}, "cterm": {"dark": "237", "light": "237"}}
+let s:palette.termblue  = {"gui": {"dark": "#63768A", "light": "#63768A"}, "cterm": {"dark": "117", "light": "117"}}
+let s:palette.termgray  = {"gui": {"dark": "#868b8d", "light": "#868b8d"}, "cterm": {"dark": "245", "light": "245"}}
+let s:palette.diffg     = {"gui": {"dark": "#012800", "light": "#012800"}, "cterm": {"dark": "232", "light": "232"}}
+let s:palette.diffr     = {"gui": {"dark": "#340001", "light": "#340001"}, "cterm": {"dark": "52",  "light": "52"}}
+let s:palette.cdiffg    = {"gui": {"dark": "#037500", "light": "#037500"}, "cterm": {"dark": "2",   "light": "2"}}
+let s:palette.cdiffy    = {"gui": {"dark": "#817e00", "light": "#817e00"}, "cterm": {"dark": "3",   "light": "3"}}
+let s:palette.cdiffr    = {"gui": {"dark": "#810002", "light": "#810002"}, "cterm": {"dark": "1",   "light": "1"}}
 "}}}
 
 
@@ -76,7 +56,7 @@ endif
 " ----------------------------------------------------------------------------
 function! s:build_prim(hi_elem, field)
   let l:vname = "s:" . a:hi_elem . "_" . a:field "
-  let l:gui_assign = s:termmode . a:hi_elem . "=" . s:palette[a:field]
+  let l:gui_assign = s:termmode . a:hi_elem . "=" . s:palette[a:field][s:termmode][s:colormode]
   exe "let " . l:vname . " = ' " . l:gui_assign . "'"
 endfunction
 let s:bg_none = " ".s:termmode."bg=NONE"
@@ -150,7 +130,7 @@ exe "hi! StatusLineNC"  .s:fg_fg_idle     .s:bg_panel       .s:fmt_none
 exe "hi! WildMenu"      .s:fg_bg          .s:bg_markup      .s:fmt_none
 exe "hi! TabLine"       .s:fg_fg          .s:bg_panel       .s:fmt_revr
 exe "hi! Title"         .s:fg_constant    .s:bg_none        .s:fmt_none
-exe "hi! Visual"        .s:fg_bg          .s:bg_special     .s:fmt_none
+exe "hi! Visual"        .s:fg_accent      .s:bg_guide       .s:fmt_none
 exe "hi! WarningMsg"    .s:fg_error       .s:bg_none        .s:fmt_none
 "}}}
 
