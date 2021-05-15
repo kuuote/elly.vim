@@ -165,22 +165,22 @@ exe "hi! DiffDelete"        .s:fg_diffr     .s:bg_diffr       .s:fmt_none
 " Terminal: "{{{
 " ----------------------------------------------------------------------------
 if has("nvim")
-  let g:terminal_color_0  = s:palette.bg
-  let g:terminal_color_1  = s:palette.markup
-  let g:terminal_color_2  = s:palette.string
-  let g:terminal_color_3  = s:palette.accent
-  let g:terminal_color_4  = s:palette.termblue
-  let g:terminal_color_5  = s:palette.constant
-  let g:terminal_color_6  = s:palette.regexp
-  let g:terminal_color_7  = s:palette.fg
-  let g:terminal_color_8  = s:palette.termgray
-  let g:terminal_color_9  = s:palette.markup
-  let g:terminal_color_10 = s:palette.string
-  let g:terminal_color_11 = s:palette.accent
-  let g:terminal_color_12 = s:palette.termblue
-  let g:terminal_color_13 = s:palette.constant
-  let g:terminal_color_14 = s:palette.regexp
-  let g:terminal_color_15 = s:palette.fg
+  let g:terminal_color_0  = s:palette.bg[s:termmode][s:colormode]
+  let g:terminal_color_1  = s:palette.markup[s:termmode][s:colormode]
+  let g:terminal_color_2  = s:palette.string[s:termmode][s:colormode]
+  let g:terminal_color_3  = s:palette.accent[s:termmode][s:colormode]
+  let g:terminal_color_4  = s:palette.termblue[s:termmode][s:colormode]
+  let g:terminal_color_5  = s:palette.constant[s:termmode][s:colormode]
+  let g:terminal_color_6  = s:palette.regexp[s:termmode][s:colormode]
+  let g:terminal_color_7  = s:palette.fg[s:termmode][s:colormode]
+  let g:terminal_color_8  = s:palette.termgray[s:termmode][s:colormode]
+  let g:terminal_color_9  = s:palette.markup[s:termmode][s:colormode]
+  let g:terminal_color_10 = s:palette.string[s:termmode][s:colormode]
+  let g:terminal_color_11 = s:palette.accent[s:termmode][s:colormode]
+  let g:terminal_color_12 = s:palette.termblue[s:termmode][s:colormode]
+  let g:terminal_color_13 = s:palette.constant[s:termmode][s:colormode]
+  let g:terminal_color_14 = s:palette.regexp[s:termmode][s:colormode]
+  let g:terminal_color_15 = s:palette.fg[s:termmode][s:colormode]
   let g:terminal_color_backround = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_7
 else
