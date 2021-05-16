@@ -24,24 +24,24 @@ endif
 " - light mode not implemented yet, but in progress
 " ----------------------------------------------------------------------------
 let s:palette = {}
-let s:palette.bg        = {"gui": {"dark": "#111a1f", "light": "#111a1f"}, "cterm": {"dark": "232", "light": "232"}}
-let s:palette.comment   = {"gui": {"dark": "#545759", "light": "#545759"}, "cterm": {"dark": "240", "light": "240"}}
-let s:palette.markup    = {"gui": {"dark": "#8D7856", "light": "#8D7856"}, "cterm": {"dark": "101", "light": "101"}}
-let s:palette.constant  = {"gui": {"dark": "#738C9C", "light": "#738C9C"}, "cterm": {"dark": "23",  "light": "23"}}
-let s:palette.operator  = {"gui": {"dark": "#738C9C", "light": "#738C9C"}, "cterm": {"dark": "23",  "light": "23"}}
-let s:palette.tag       = {"gui": {"dark": "#8D7856", "light": "#8D7856"}, "cterm": {"dark": "101", "light": "101"}}
-let s:palette.regexp    = {"gui": {"dark": "#6998B3", "light": "#6998B3"}, "cterm": {"dark": "75",  "light": "75"}}
-let s:palette.string    = {"gui": {"dark": "#798362", "light": "#798362"}, "cterm": {"dark": "66",  "light": "66"}}
-let s:palette.function  = {"gui": {"dark": "#8D7856", "light": "#8D7856"}, "cterm": {"dark": "101", "light": "101"}}
-let s:palette.special   = {"gui": {"dark": "#9B9257", "light": "#9B9257"}, "cterm": {"dark": "100", "light": "100"}}
-let s:palette.keyword   = {"gui": {"dark": "#8D7856", "light": "#8D7856"}, "cterm": {"dark": "101", "light": "101"}}
+let s:palette.bg        = {"gui": {"dark": "#111a1f", "light": "#D1C9B7"}, "cterm": {"dark": "232", "light": "187"}}
+let s:palette.comment   = {"gui": {"dark": "#545759", "light": "#242227"}, "cterm": {"dark": "240", "light": "235"}}
+let s:palette.markup    = {"gui": {"dark": "#8D7856", "light": "#5A4430"}, "cterm": {"dark": "101", "light": "58"}}
+let s:palette.constant  = {"gui": {"dark": "#738C9C", "light": "#186183"}, "cterm": {"dark": "23",  "light": "32"}}
+let s:palette.operator  = {"gui": {"dark": "#738C9C", "light": "#186183"}, "cterm": {"dark": "23",  "light": "32"}}
+let s:palette.tag       = {"gui": {"dark": "#8D7856", "light": "#5A4430"}, "cterm": {"dark": "101", "light": "58"}}
+let s:palette.regexp    = {"gui": {"dark": "#6998B3", "light": "#186183"}, "cterm": {"dark": "75",  "light": "32"}}
+let s:palette.string    = {"gui": {"dark": "#798362", "light": "#28371A"}, "cterm": {"dark": "66",  "light": "22"}}
+let s:palette.function  = {"gui": {"dark": "#8D7856", "light": "#5A4430"}, "cterm": {"dark": "101", "light": "58"}}
+let s:palette.special   = {"gui": {"dark": "#9B9257", "light": "#9B7B2B"}, "cterm": {"dark": "100", "light": "3"}}
+let s:palette.keyword   = {"gui": {"dark": "#8D7856", "light": "#5A4430"}, "cterm": {"dark": "101", "light": "58"}}
 let s:palette.error     = {"gui": {"dark": "#810002", "light": "#810002"}, "cterm": {"dark": "1",   "light": "1"}}
-let s:palette.accent    = {"gui": {"dark": "#9B9257", "light": "#9B9257"}, "cterm": {"dark": "100", "light": "100"}}
-let s:palette.panel     = {"gui": {"dark": "#14191F", "light": "#14191F"}, "cterm": {"dark": "234", "light": "234"}}
-let s:palette.guide     = {"gui": {"dark": "#2D3640", "light": "#2D3640"}, "cterm": {"dark": "235", "light": "235"}}
-let s:palette.line      = {"gui": {"dark": "#151A1E", "light": "#151A1E"}, "cterm": {"dark": "234", "light": "234"}}
-let s:palette.selection = {"gui": {"dark": "#253340", "light": "#253340"}, "cterm": {"dark": "235", "light": "235"}}
-let s:palette.fg        = {"gui": {"dark": "#ACB3B5", "light": "#ACB3B5"}, "cterm": {"dark": "248", "light": "248"}}
+let s:palette.accent    = {"gui": {"dark": "#9B9257", "light": "#9B7B2B"}, "cterm": {"dark": "100", "light": "3"}}
+let s:palette.panel     = {"gui": {"dark": "#14191F", "light": "#D5CEBE"}, "cterm": {"dark": "234", "light": "185"}}
+let s:palette.guide     = {"gui": {"dark": "#2D3640", "light": "#E5E1D7"}, "cterm": {"dark": "235", "light": "185"}}
+let s:palette.line      = {"gui": {"dark": "#151A1E", "light": "#DDD7CA"}, "cterm": {"dark": "234", "light": "185"}}
+let s:palette.selection = {"gui": {"dark": "#253340", "light": "#E5E1D7"}, "cterm": {"dark": "235", "light": "185"}}
+let s:palette.fg        = {"gui": {"dark": "#ACB3B5", "light": "#242227"}, "cterm": {"dark": "248", "light": "235"}}
 let s:palette.fg_idle   = {"gui": {"dark": "#3E4B59", "light": "#3E4B59"}, "cterm": {"dark": "237", "light": "237"}}
 let s:palette.termblue  = {"gui": {"dark": "#63768A", "light": "#63768A"}, "cterm": {"dark": "117", "light": "117"}}
 let s:palette.termgray  = {"gui": {"dark": "#868b8d", "light": "#868b8d"}, "cterm": {"dark": "245", "light": "245"}}
@@ -98,7 +98,7 @@ exe "let s:fmt_revb = ' gui=NONE".s:r.s:b.  " cterm=NONE".s:r.s:b.  " term=NONE"
 " ----------------------------------------------------------------------------
 exe "hi! Normal"        .s:fg_fg          .s:bg_bg          .s:fmt_none
 exe "hi! ColorColumn"   .s:fg_none        .s:bg_line        .s:fmt_none
-exe "hi! Constant"      .s:fg_accent      .s:bg_line        .s:fmt_none
+exe "hi! Constant"      .s:fg_accent      .s:bg_none        .s:fmt_none
 exe "hi! CursorColumn"  .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorLine"    .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorLineNr"  .s:fg_accent      .s:bg_line        .s:fmt_none
