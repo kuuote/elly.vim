@@ -24,21 +24,21 @@ endif
 " - light mode not implemented yet, but in progress
 " ----------------------------------------------------------------------------
 let s:palette = {}
-let s:palette.bg        = {"gui": {"dark": "#111a1f", "light": "#D1C9B7"}, "cterm": {"dark": "232", "light": "187"}}
-let s:palette.comment   = {"gui": {"dark": "#545759", "light": "#242227"}, "cterm": {"dark": "240", "light": "235"}}
-let s:palette.markup    = {"gui": {"dark": "#8D7856", "light": "#5A4430"}, "cterm": {"dark": "101", "light": "58"}}
-let s:palette.constant  = {"gui": {"dark": "#738C9C", "light": "#186183"}, "cterm": {"dark": "23",  "light": "32"}}
-let s:palette.operator  = {"gui": {"dark": "#738C9C", "light": "#186183"}, "cterm": {"dark": "23",  "light": "32"}}
-let s:palette.tag       = {"gui": {"dark": "#8D7856", "light": "#5A4430"}, "cterm": {"dark": "101", "light": "58"}}
-let s:palette.regexp    = {"gui": {"dark": "#6998B3", "light": "#186183"}, "cterm": {"dark": "75",  "light": "32"}}
-let s:palette.string    = {"gui": {"dark": "#798362", "light": "#28371A"}, "cterm": {"dark": "66",  "light": "22"}}
-let s:palette.function  = {"gui": {"dark": "#8D7856", "light": "#5A4430"}, "cterm": {"dark": "101", "light": "58"}}
-let s:palette.special   = {"gui": {"dark": "#9B9257", "light": "#9B7B2B"}, "cterm": {"dark": "100", "light": "3"}}
-let s:palette.keyword   = {"gui": {"dark": "#8D7856", "light": "#5A4430"}, "cterm": {"dark": "101", "light": "58"}}
+let s:palette.bg        = {"gui": {"dark": "#111a1f", "light": "#f7f6f3"}, "cterm": {"dark": "232", "light": "187"}}
+let s:palette.comment   = {"gui": {"dark": "#545759", "light": "#868b8d"}, "cterm": {"dark": "240", "light": "235"}}
+let s:palette.markup    = {"gui": {"dark": "#8D7856", "light": "#dc8b07"}, "cterm": {"dark": "101", "light": "58"}}
+let s:palette.constant  = {"gui": {"dark": "#738C9C", "light": "#4e94c1"}, "cterm": {"dark": "23",  "light": "32"}}
+let s:palette.operator  = {"gui": {"dark": "#738C9C", "light": "#4e94c1"}, "cterm": {"dark": "23",  "light": "32"}}
+let s:palette.tag       = {"gui": {"dark": "#8D7856", "light": "#dc8b07"}, "cterm": {"dark": "101", "light": "58"}}
+let s:palette.regexp    = {"gui": {"dark": "#6998B3", "light": "#4f9fcd"}, "cterm": {"dark": "75",  "light": "32"}}
+let s:palette.string    = {"gui": {"dark": "#798362", "light": "#748c40"}, "cterm": {"dark": "66",  "light": "22"}}
+let s:palette.function  = {"gui": {"dark": "#8D7856", "light": "#dc8b07"}, "cterm": {"dark": "101", "light": "58"}}
+let s:palette.special   = {"gui": {"dark": "#9B9257", "light": "#b7a73b"}, "cterm": {"dark": "100", "light": "3"}}
+let s:palette.keyword   = {"gui": {"dark": "#8D7856", "light": "#dc8b07"}, "cterm": {"dark": "101", "light": "58"}}
 let s:palette.error     = {"gui": {"dark": "#810002", "light": "#810002"}, "cterm": {"dark": "1",   "light": "1"}}
-let s:palette.accent    = {"gui": {"dark": "#9B9257", "light": "#9B7B2B"}, "cterm": {"dark": "100", "light": "3"}}
+let s:palette.accent    = {"gui": {"dark": "#9B9257", "light": "#b7a73b"}, "cterm": {"dark": "100", "light": "3"}}
 let s:palette.panel     = {"gui": {"dark": "#14191F", "light": "#D5CEBE"}, "cterm": {"dark": "234", "light": "185"}}
-let s:palette.guide     = {"gui": {"dark": "#2D3640", "light": "#E5E1D7"}, "cterm": {"dark": "235", "light": "185"}}
+let s:palette.guide     = {"gui": {"dark": "#2D3640", "light": "#2D3640"}, "cterm": {"dark": "235", "light": "185"}}
 let s:palette.line      = {"gui": {"dark": "#151A1E", "light": "#DDD7CA"}, "cterm": {"dark": "234", "light": "185"}}
 let s:palette.selection = {"gui": {"dark": "#253340", "light": "#E5E1D7"}, "cterm": {"dark": "235", "light": "185"}}
 let s:palette.fg        = {"gui": {"dark": "#ACB3B5", "light": "#242227"}, "cterm": {"dark": "248", "light": "235"}}
@@ -120,7 +120,7 @@ exe "hi! NonText"       .s:fg_guide       .s:bg_none        .s:fmt_none
 exe "hi! Pmenu"         .s:fg_fg          .s:bg_selection   .s:fmt_none
 exe "hi! PmenuSel"      .s:fg_fg          .s:bg_selection   .s:fmt_revr
 exe "hi! Question"      .s:fg_string      .s:bg_none        .s:fmt_none
-exe "hi! Search"        .s:fg_none        .s:bg_guide       .s:fmt_none
+exe "hi! Search"        .s:fg_bg          .s:bg_accent      .s:fmt_none
 exe "hi! SpecialKey"    .s:fg_selection   .s:bg_none        .s:fmt_none
 exe "hi! SpellCap"      .s:fg_tag         .s:bg_none        .s:fmt_undr
 exe "hi! SpellLocal"    .s:fg_keyword     .s:bg_none        .s:fmt_undr
