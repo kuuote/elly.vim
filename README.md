@@ -60,6 +60,7 @@ set below in coc-settings.json
 - [elly-kitty](https://github.com/ulwlu/elly-kitty) - This is made by [Benoit Pingris](https://github.com/BenoitPingris).
 - [elly-simple-bar](https://github.com/ulwlu/elly-simple-bar)
 - [elly-chrome](https://github.com/ulwlu/elly-chrome)
+- [tilix-elly](https://github.com/HexHelix-xx/tilix-elly) - This is made by [Nirna Kajanovszki](https://github.com/HexHelix-xx).
 
 ## Warning
 
