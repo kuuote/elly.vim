@@ -74,6 +74,11 @@ This means your terminal doesn't support gui colors. In this case, please set be
 let g:elly_termmode="cterm"
 ```
 
+If you found some highlighting strange, please execute the command below and paste the result in issue.
+```vim
+:echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") ."> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"
+```
+
 ## Thanks
 
 - [ayu-vim](https://github.com/ayu-theme/ayu-vim) - I use this theme for three years. I used the code as a reference.

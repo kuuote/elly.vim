@@ -100,7 +100,7 @@ exe "hi! ErrorMsg"          .s:fg_error     .s:bg_none      .s:fmt_none
 exe "hi! FoldColumn"        .s:fg_none      .s:bg_panel     .s:fmt_none
 exe "hi! Folded"            .s:fg_idle      .s:bg_panel     .s:fmt_none
 exe "hi! Function"          .s:fg_c01       .s:bg_none      .s:fmt_none
-exe "hi! Identifier"        .s:fg_c01       .s:bg_none      .s:fmt_none
+exe "hi! Identifier"        .s:fg_c07       .s:bg_none      .s:fmt_none
 exe "hi! Ignore"            .s:fg_none      .s:bg_none      .s:fmt_none
 exe "hi! Keyword"           .s:fg_c05       .s:bg_none      .s:fmt_none
 exe "hi! LineNr"            .s:fg_guide     .s:bg_none      .s:fmt_none
@@ -129,7 +129,7 @@ exe "hi! String"            .s:fg_c02       .s:bg_none      .s:fmt_none
 exe "hi! Structure"         .s:fg_c03       .s:bg_none      .s:fmt_none
 exe "hi! TabLine"           .s:fg_idle      .s:bg_panel     .s:fmt_revr
 exe "hi! Title"             .s:fg_c05       .s:bg_none      .s:fmt_none
-exe "hi! Todo"              .s:fg_c01       .s:bg_none      .s:fmt_none
+exe "hi! Todo"              .s:fg_c05       .s:bg_none      .s:fmt_none
 exe "hi! Type"              .s:fg_c03       .s:bg_none      .s:fmt_none
 exe "hi! Underlined"        .s:fg_c01       .s:bg_none      .s:fmt_undr
 exe "hi! VertSplit"         .s:fg_comment   .s:bg_none      .s:fmt_none
@@ -138,6 +138,47 @@ exe "hi! WarningMsg"        .s:fg_error     .s:bg_none      .s:fmt_none
 exe "hi! WildMenu"          .s:fg_c00       .s:bg_c01       .s:fmt_none
 exe "hi! qfLineNr"          .s:fg_c01       .s:bg_none      .s:fmt_none
 "}}}
+
+
+" Plugins Languages: "{{{
+" ----------------------------------------------------------------------------
+" Rust
+" ---------
+exe "hi! rustCommentLineDoc" .s:fg_comment .s:bg_none .s:fmt_none
+
+" Vimscript
+" ---------
+exe "hi! vimParenSep" .s:fg_c05 .s:bg_none .s:fmt_none
+
+" NerdTree
+" ---------
+exe "hi! NERDTreeOpenable" .s:fg_idle .s:bg_none .s:fmt_none
+exe "hi! NERDTreeClosable" .s:fg_c03  .s:bg_none .s:fmt_none
+exe "hi! NERDTreeUp"       .s:fg_idle .s:bg_none .s:fmt_none
+exe "hi! NERDTreeDir"      .s:fg_c01  .s:bg_none .s:fmt_none
+exe "hi! NERDTreeFile"     .s:fg_none .s:bg_none .s:fmt_none
+exe "hi! NERDTreeDirSlash" .s:fg_c03  .s:bg_none .s:fmt_none
+
+" GitGutter
+" ---------
+exe "hi! GitGutterAdd"          .s:fg_c02 .s:bg_none .s:fmt_none
+exe "hi! GitGutterChange"       .s:fg_c01 .s:bg_none .s:fmt_none
+exe "hi! GitGutterDelete"       .s:fg_c01 .s:bg_none .s:fmt_none
+exe "hi! GitGutterChangeDelete" .s:fg_c01 .s:bg_none .s:fmt_none
+
+" ale
+" ---------
+exe "hi! ALEError"       . s:fg_none .s:bg_none  .s:fmt_curl
+exe "hi! ALEErrorSign"   . s:fg_none .s:bg_error .s:fmt_none
+exe "hi! ALEWarning"     . s:fg_none .s:bg_none  .s:fmt_curl
+exe "hi! ALEWarningSign" . s:fg_none .s:bg_c03   .s:fmt_none
+
+" coc-git
+" ---------
+exe "hi! CocDiffAdd"    . s:fg_cdiffg .s:bg_none .s:fmt_none
+exe "hi! CocDiffChange" . s:fg_cdiffy .s:bg_none .s:fmt_none
+exe "hi! CocDiffDelete" . s:fg_cdiffr .s:bg_none .s:fmt_none
+" }}}
 
 
 " Terminal: "{{{
@@ -183,34 +224,3 @@ else
 endif
 " }}}
 
-
-" Plugins: "{{{
-" ----------------------------------------------------------------------------
-" NerdTree
-" ---------
-exe "hi! NERDTreeOpenable" .s:fg_idle .s:bg_none .s:fmt_none
-exe "hi! NERDTreeClosable" .s:fg_c03  .s:bg_none .s:fmt_none
-exe "hi! NERDTreeUp"       .s:fg_idle .s:bg_none .s:fmt_none
-exe "hi! NERDTreeDir"      .s:fg_c01  .s:bg_none .s:fmt_none
-exe "hi! NERDTreeFile"     .s:fg_none .s:bg_none .s:fmt_none
-exe "hi! NERDTreeDirSlash" .s:fg_c03  .s:bg_none .s:fmt_none
-
-" GitGutter
-" ---------
-exe "hi! GitGutterAdd"          .s:fg_c02 .s:bg_none .s:fmt_none
-exe "hi! GitGutterChange"       .s:fg_c01 .s:bg_none .s:fmt_none
-exe "hi! GitGutterDelete"       .s:fg_c01 .s:bg_none .s:fmt_none
-exe "hi! GitGutterChangeDelete" .s:fg_c01 .s:bg_none .s:fmt_none
-
-" ale
-" ---------
-exe "hi! ALEError"       . s:fg_none .s:bg_none  .s:fmt_curl
-exe "hi! ALEErrorSign"   . s:fg_none .s:bg_error .s:fmt_none
-exe "hi! ALEWarning"     . s:fg_none .s:bg_none  .s:fmt_curl
-exe "hi! ALEWarningSign" . s:fg_none .s:bg_c03   .s:fmt_none
-
-" coc-git
-" ---------
-exe "hi! CocDiffAdd"    . s:fg_cdiffg .s:bg_none .s:fmt_none
-exe "hi! CocDiffChange" . s:fg_cdiffy .s:bg_none .s:fmt_none
-exe "hi! CocDiffDelete" . s:fg_cdiffr .s:bg_none .s:fmt_none
