@@ -102,17 +102,17 @@ exe "hi! Folded"            .s:fg_idle      .s:bg_panel     .s:fmt_none
 exe "hi! Function"          .s:fg_c01       .s:bg_none      .s:fmt_none
 exe "hi! Identifier"        .s:fg_c07       .s:bg_none      .s:fmt_none
 exe "hi! Ignore"            .s:fg_none      .s:bg_none      .s:fmt_none
-exe "hi! Keyword"           .s:fg_c05       .s:bg_none      .s:fmt_none
+exe "hi! Keyword"           .s:fg_c04       .s:bg_none      .s:fmt_none
 exe "hi! LineNr"            .s:fg_guide     .s:bg_none      .s:fmt_none
-exe "hi! MatchParen"        .s:fg_c07       .s:bg_c00       .s:fmt_undr
+exe "hi! MatchParen"        .s:fg_c07       .s:bg_c01       .s:fmt_undr
 exe "hi! ModeMsg"           .s:fg_c02       .s:bg_none      .s:fmt_none
 exe "hi! MoreMsg"           .s:fg_c02       .s:bg_none      .s:fmt_none
 exe "hi! NonText"           .s:fg_guide     .s:bg_none      .s:fmt_none
 exe "hi! Normal"            .s:fg_c07       .s:bg_c00       .s:fmt_none
-exe "hi! Operator"          .s:fg_c07       .s:bg_none      .s:fmt_none
+exe "hi! Operator"          .s:fg_c05       .s:bg_none      .s:fmt_none
 exe "hi! Pmenu"             .s:fg_c07       .s:bg_selection .s:fmt_none
 exe "hi! PmenuSel"          .s:fg_c07       .s:bg_selection .s:fmt_revr
-exe "hi! PreProc"           .s:fg_c03       .s:bg_none      .s:fmt_none
+exe "hi! PreProc"           .s:fg_c04       .s:bg_none      .s:fmt_none
 exe "hi! Question"          .s:fg_c02       .s:bg_none      .s:fmt_none
 exe "hi! Search"            .s:fg_none      .s:bg_guide     .s:fmt_none
 exe "hi! SignColumn"        .s:fg_none      .s:bg_c00       .s:fmt_none
@@ -122,14 +122,14 @@ exe "hi! SpellBad"          .s:fg_error     .s:bg_none      .s:fmt_undr
 exe "hi! SpellCap"          .s:fg_c01       .s:bg_none      .s:fmt_undr
 exe "hi! SpellLocal"        .s:fg_c01       .s:bg_none      .s:fmt_undr
 exe "hi! SpellRare"         .s:fg_c06       .s:bg_none      .s:fmt_undr
-exe "hi! Statement"         .s:fg_c01       .s:bg_none      .s:fmt_none
+exe "hi! Statement"         .s:fg_c05       .s:bg_none      .s:fmt_none
 exe "hi! StatusLine"        .s:fg_c07       .s:bg_panel     .s:fmt_none
 exe "hi! StatusLineNC"      .s:fg_idle      .s:bg_panel     .s:fmt_none
 exe "hi! String"            .s:fg_c02       .s:bg_none      .s:fmt_none
 exe "hi! Structure"         .s:fg_c03       .s:bg_none      .s:fmt_none
 exe "hi! TabLine"           .s:fg_idle      .s:bg_panel     .s:fmt_revr
-exe "hi! Title"             .s:fg_c05       .s:bg_none      .s:fmt_none
-exe "hi! Todo"              .s:fg_c05       .s:bg_none      .s:fmt_none
+exe "hi! Title"             .s:fg_c03       .s:bg_none      .s:fmt_none
+exe "hi! Todo"              .s:fg_comment   .s:bg_none      .s:fmt_undr
 exe "hi! Type"              .s:fg_c03       .s:bg_none      .s:fmt_none
 exe "hi! Underlined"        .s:fg_c01       .s:bg_none      .s:fmt_undr
 exe "hi! VertSplit"         .s:fg_comment   .s:bg_none      .s:fmt_none
@@ -149,6 +149,11 @@ exe "hi! rustCommentLineDoc" .s:fg_comment .s:bg_none .s:fmt_none
 " Vimscript
 " ---------
 exe "hi! vimParenSep" .s:fg_c05 .s:bg_none .s:fmt_none
+
+" Markdown
+" ---------
+exe "hi! mkdHeading" .s:fg_c01 .s:bg_none .s:fmt_none
+exe "hi! mkdCode"    .s:fg_c01 .s:bg_none .s:fmt_undr
 
 " NerdTree
 " ---------
