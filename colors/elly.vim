@@ -122,13 +122,13 @@ exe "hi! SpellBad"          .s:fg_error     .s:bg_none      .s:fmt_undr
 exe "hi! SpellCap"          .s:fg_c01       .s:bg_none      .s:fmt_undr
 exe "hi! SpellLocal"        .s:fg_c01       .s:bg_none      .s:fmt_undr
 exe "hi! SpellRare"         .s:fg_c06       .s:bg_none      .s:fmt_undr
-exe "hi! Statement"         .s:fg_c05       .s:bg_none      .s:fmt_none
+exe "hi! Statement"         .s:fg_c01       .s:bg_none      .s:fmt_none
 exe "hi! StatusLine"        .s:fg_c07       .s:bg_panel     .s:fmt_none
 exe "hi! StatusLineNC"      .s:fg_idle      .s:bg_panel     .s:fmt_none
 exe "hi! String"            .s:fg_c02       .s:bg_none      .s:fmt_none
 exe "hi! Structure"         .s:fg_c03       .s:bg_none      .s:fmt_none
 exe "hi! TabLine"           .s:fg_idle      .s:bg_panel     .s:fmt_revr
-exe "hi! Title"             .s:fg_c03       .s:bg_none      .s:fmt_none
+exe "hi! Title"             .s:fg_c04       .s:bg_none      .s:fmt_none
 exe "hi! Todo"              .s:fg_comment   .s:bg_none      .s:fmt_undr
 exe "hi! Type"              .s:fg_c03       .s:bg_none      .s:fmt_none
 exe "hi! Underlined"        .s:fg_c01       .s:bg_none      .s:fmt_undr
@@ -152,7 +152,7 @@ exe "hi! vimParenSep" .s:fg_c05 .s:bg_none .s:fmt_none
 
 " Markdown
 " ---------
-exe "hi! mkdHeading" .s:fg_c01 .s:bg_none .s:fmt_none
+exe "hi! mkdHeading" .s:fg_c04 .s:bg_none .s:fmt_none
 exe "hi! mkdCode"    .s:fg_c01 .s:bg_none .s:fmt_undr
 
 " NerdTree
