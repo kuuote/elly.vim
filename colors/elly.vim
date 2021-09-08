@@ -108,7 +108,7 @@ exe "hi! Pmenu"             .s:fg_c07       .s:bg_selection .s:fmt_none
 exe "hi! PmenuSel"          .s:fg_c07       .s:bg_selection .s:fmt_revr
 exe "hi! PreProc"           .s:fg_c03       .s:bg_none      .s:fmt_none
 exe "hi! Question"          .s:fg_c02       .s:bg_none      .s:fmt_none
-exe "hi! Search"            .s:fg_none      .s:bg_comment   .s:fmt_none
+exe "hi! Search"            .s:fg_none      .s:bg_none      .s:fmt_revr
 exe "hi! SignColumn"        .s:fg_none      .s:bg_c00       .s:fmt_none
 exe "hi! Special"           .s:fg_c05       .s:bg_none      .s:fmt_none
 exe "hi! SpellBad"          .s:fg_error     .s:bg_none      .s:fmt_undr
