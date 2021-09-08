@@ -26,11 +26,12 @@ let s:palette.c03       = {"gui": {"dark": "#9B9257"}, "cterm": {"dark": "100"}}
 let s:palette.c04       = {"gui": {"dark": "#63768A"}, "cterm": {"dark": "117"}}
 let s:palette.c05       = {"gui": {"dark": "#738C9C"}, "cterm": {"dark": " 23"}}
 let s:palette.c06       = {"gui": {"dark": "#6998B3"}, "cterm": {"dark": " 75"}}
-let s:palette.c07       = {"gui": {"dark": "#ACB3B5"}, "cterm": {"dark": "248"}}
+let s:palette.c07       = {"gui": {"dark": "#9A9A9A"}, "cterm": {"dark": "248"}}
 let s:palette.bk00      = {"gui": {"dark": "#3E4B59"}, "cterm": {"dark": "237"}}
 let s:palette.bk01      = {"gui": {"dark": "#151A1E"}, "cterm": {"dark": "234"}}
 let s:palette.bk02      = {"gui": {"dark": "#14191F"}, "cterm": {"dark": "234"}}
-let s:palette.comment   = {"gui": {"dark": "#2D3640"}, "cterm": {"dark": "240"}}
+let s:palette.bk03      = {"gui": {"dark": "#2D3640"}, "cterm": {"dark": "234"}}
+let s:palette.comment   = {"gui": {"dark": "#5A5A5A"}, "cterm": {"dark": "240"}}
 let s:palette.error     = {"gui": {"dark": "#810002"}, "cterm": {"dark": "  1"}}
 let s:palette.selection = {"gui": {"dark": "#253340"}, "cterm": {"dark": "235"}}
 let s:palette.diffg     = {"gui": {"dark": "#012800"}, "cterm": {"dark": "232"}}
@@ -94,13 +95,13 @@ exe "hi! ErrorMsg"          .s:fg_error     .s:bg_none      .s:fmt_none
 exe "hi! FoldColumn"        .s:fg_none      .s:bg_bk02      .s:fmt_none
 exe "hi! Folded"            .s:fg_bk00      .s:bg_bk02      .s:fmt_none
 exe "hi! Function"          .s:fg_c01       .s:bg_none      .s:fmt_none
-exe "hi! Identifier"        .s:fg_c07       .s:bg_none      .s:fmt_none
+exe "hi! Identifier"        .s:fg_c01       .s:bg_none      .s:fmt_none
 exe "hi! Ignore"            .s:fg_none      .s:bg_none      .s:fmt_none
 exe "hi! Keyword"           .s:fg_c05       .s:bg_none      .s:fmt_none
-exe "hi! LineNr"            .s:fg_comment   .s:bg_none      .s:fmt_none
+exe "hi! LineNr"            .s:fg_bk03      .s:bg_none      .s:fmt_none
 exe "hi! MatchParen"        .s:fg_c07       .s:bg_c00       .s:fmt_undr
 exe "hi! ModeMsg"           .s:fg_c02       .s:bg_none      .s:fmt_none
-exe "hi! NonText"           .s:fg_comment   .s:bg_none      .s:fmt_none
+exe "hi! NonText"           .s:fg_bk03      .s:bg_none      .s:fmt_none
 exe "hi! Normal"            .s:fg_c07       .s:bg_c00       .s:fmt_none
 exe "hi! Operator"          .s:fg_c07       .s:bg_none      .s:fmt_none
 exe "hi! Pmenu"             .s:fg_c07       .s:bg_selection .s:fmt_none
@@ -121,7 +122,7 @@ exe "hi! String"            .s:fg_c02       .s:bg_none      .s:fmt_none
 exe "hi! Structure"         .s:fg_c03       .s:bg_none      .s:fmt_none
 exe "hi! TabLine"           .s:fg_bk00      .s:bg_bk02      .s:fmt_revr
 exe "hi! Title"             .s:fg_c04       .s:bg_none      .s:fmt_none
-exe "hi! Todo"              .s:fg_comment   .s:bg_none      .s:fmt_undr
+exe "hi! Todo"              .s:fg_c01       .s:bg_none      .s:fmt_undr
 exe "hi! Type"              .s:fg_c03       .s:bg_none      .s:fmt_none
 exe "hi! Underlined"        .s:fg_c01       .s:bg_none      .s:fmt_undr
 exe "hi! VertSplit"         .s:fg_comment   .s:bg_none      .s:fmt_none
