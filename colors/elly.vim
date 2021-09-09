@@ -19,7 +19,7 @@ endif
 " Palettes:"{{{
 " ----------------------------------------------------------------------------
 let s:palette = {}
-let s:palette.c00       = {"gui": {"dark": "#111a1f"}, "cterm": {"dark": "232"}}
+let s:palette.c00       = {"gui": {"dark": "#111A1F"}, "cterm": {"dark": "232"}}
 let s:palette.c01       = {"gui": {"dark": "#8D7856"}, "cterm": {"dark": "101"}}
 let s:palette.c02       = {"gui": {"dark": "#798362"}, "cterm": {"dark": " 66"}}
 let s:palette.c03       = {"gui": {"dark": "#9B9257"}, "cterm": {"dark": "100"}}
@@ -37,7 +37,7 @@ let s:palette.selection = {"gui": {"dark": "#253340"}, "cterm": {"dark": "235"}}
 let s:palette.diffg     = {"gui": {"dark": "#012800"}, "cterm": {"dark": "232"}}
 let s:palette.diffr     = {"gui": {"dark": "#340001"}, "cterm": {"dark": " 52"}}
 let s:palette.cdiffg    = {"gui": {"dark": "#037500"}, "cterm": {"dark": "  2"}}
-let s:palette.cdiffy    = {"gui": {"dark": "#817e00"}, "cterm": {"dark": "  3"}}
+let s:palette.cdiffy    = {"gui": {"dark": "#817E00"}, "cterm": {"dark": "  3"}}
 let s:palette.cdiffr    = {"gui": {"dark": "#810002"}, "cterm": {"dark": "  1"}}
 "}}}
 
