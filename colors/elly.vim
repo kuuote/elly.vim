@@ -206,21 +206,21 @@ if has("nvim")
   let g:terminal_color_foreground = g:terminal_color_7
 else
   let g:terminal_ansi_colors = [
-    \ s:palette.c00[s:cui_gui][s:dark_light]
-    \ s:palette.c01[s:cui_gui][s:dark_light]
-    \ s:palette.c02[s:cui_gui][s:dark_light]
-    \ s:palette.c03[s:cui_gui][s:dark_light]
-    \ s:palette.c04[s:cui_gui][s:dark_light]
-    \ s:palette.c05[s:cui_gui][s:dark_light]
-    \ s:palette.c06[s:cui_gui][s:dark_light]
-    \ s:palette.c07[s:cui_gui][s:dark_light]
-    \ s:palette.c00[s:cui_gui][s:dark_light]
-    \ s:palette.c01[s:cui_gui][s:dark_light]
-    \ s:palette.c02[s:cui_gui][s:dark_light]
-    \ s:palette.c03[s:cui_gui][s:dark_light]
-    \ s:palette.c04[s:cui_gui][s:dark_light]
-    \ s:palette.c05[s:cui_gui][s:dark_light]
-    \ s:palette.c06[s:cui_gui][s:dark_light]
+    \ s:palette.c00[s:cui_gui][s:dark_light],
+    \ s:palette.c01[s:cui_gui][s:dark_light],
+    \ s:palette.c02[s:cui_gui][s:dark_light],
+    \ s:palette.c03[s:cui_gui][s:dark_light],
+    \ s:palette.c04[s:cui_gui][s:dark_light],
+    \ s:palette.c05[s:cui_gui][s:dark_light],
+    \ s:palette.c06[s:cui_gui][s:dark_light],
+    \ s:palette.c07[s:cui_gui][s:dark_light],
+    \ s:palette.c00[s:cui_gui][s:dark_light],
+    \ s:palette.c01[s:cui_gui][s:dark_light],
+    \ s:palette.c02[s:cui_gui][s:dark_light],
+    \ s:palette.c03[s:cui_gui][s:dark_light],
+    \ s:palette.c04[s:cui_gui][s:dark_light],
+    \ s:palette.c05[s:cui_gui][s:dark_light],
+    \ s:palette.c06[s:cui_gui][s:dark_light],
     \ s:palette.c07[s:cui_gui][s:dark_light]
   \ ]
 endif
