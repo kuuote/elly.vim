@@ -61,6 +61,7 @@ set below in coc-settings.json
 - [elly-simple-bar](https://github.com/ulwlu/elly-simple-bar)
 - [elly-chrome](https://github.com/ulwlu/elly-chrome)
 - [tilix-elly](https://github.com/HexHelix-xx/tilix-elly) - This is made by [Nirna Kajanovszki](https://github.com/HexHelix-xx).
+- [hyper-elly](https://github.com/ciscohack/hyper-elly) - This is maintained by [ciscohack](https://github.com/ciscohack).
 
 ## Warning
 
