@@ -27,6 +27,7 @@ let s:palette.c04       = {"gui": {"dark": "#63768A"}, "cterm": {"dark": "117"}}
 let s:palette.c05       = {"gui": {"dark": "#738C9C"}, "cterm": {"dark": " 23"}}
 let s:palette.c06       = {"gui": {"dark": "#6998B3"}, "cterm": {"dark": " 75"}}
 let s:palette.c07       = {"gui": {"dark": "#9A9A9A"}, "cterm": {"dark": "248"}}
+let s:palette.c08       = {"gui": {"dark": "#868B8D"}, "cterm": {"dark": "248"}}
 let s:palette.bk00      = {"gui": {"dark": "#3E4B59"}, "cterm": {"dark": "237"}}
 let s:palette.bk01      = {"gui": {"dark": "#151A1E"}, "cterm": {"dark": "234"}}
 let s:palette.bk02      = {"gui": {"dark": "#14191F"}, "cterm": {"dark": "234"}}
@@ -194,7 +195,7 @@ if has("nvim")
   let g:terminal_color_5  = s:palette.c05[s:cui_gui][s:dark_light]
   let g:terminal_color_6  = s:palette.c06[s:cui_gui][s:dark_light]
   let g:terminal_color_7  = s:palette.c07[s:cui_gui][s:dark_light]
-  let g:terminal_color_8  = s:palette.c00[s:cui_gui][s:dark_light]
+  let g:terminal_color_8  = s:palette.c08[s:cui_gui][s:dark_light]
   let g:terminal_color_9  = s:palette.c01[s:cui_gui][s:dark_light]
   let g:terminal_color_10 = s:palette.c02[s:cui_gui][s:dark_light]
   let g:terminal_color_11 = s:palette.c03[s:cui_gui][s:dark_light]
@@ -214,7 +215,7 @@ else
     \ s:palette.c05[s:cui_gui][s:dark_light],
     \ s:palette.c06[s:cui_gui][s:dark_light],
     \ s:palette.c07[s:cui_gui][s:dark_light],
-    \ s:palette.c00[s:cui_gui][s:dark_light],
+    \ s:palette.c08[s:cui_gui][s:dark_light],
     \ s:palette.c01[s:cui_gui][s:dark_light],
     \ s:palette.c02[s:cui_gui][s:dark_light],
     \ s:palette.c03[s:cui_gui][s:dark_light],
