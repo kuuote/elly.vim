@@ -121,7 +121,9 @@ exe "hi! StatusLine"        .s:fg_c07       .s:bg_bk02      .s:fmt_none
 exe "hi! StatusLineNC"      .s:fg_bk00      .s:bg_bk02      .s:fmt_none
 exe "hi! String"            .s:fg_c02       .s:bg_none      .s:fmt_none
 exe "hi! Structure"         .s:fg_c03       .s:bg_none      .s:fmt_none
-exe "hi! TabLine"           .s:fg_bk00      .s:bg_bk02      .s:fmt_revr
+exe "hi! TabLine"           .s:fg_c08       .s:bg_bk03      .s:fmt_none
+exe "hi! TabLineSel"        .s:fg_c00       .s:bg_c01       .s:fmt_none
+exe "hi! TabLineFill"       .s:fg_c00       .s:bg_c00       .s:fmt_none
 exe "hi! Title"             .s:fg_c04       .s:bg_none      .s:fmt_none
 exe "hi! Todo"              .s:fg_c01       .s:bg_none      .s:fmt_undr
 exe "hi! Type"              .s:fg_c03       .s:bg_none      .s:fmt_none
@@ -226,4 +228,3 @@ else
   \ ]
 endif
 " }}}
-
