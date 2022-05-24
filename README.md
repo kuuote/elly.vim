@@ -85,7 +85,3 @@ If you found some highlighting strange, please execute the command below and pas
 - [ayu-vim](https://github.com/ayu-theme/ayu-vim) - I use this theme for three years. I used the code as a reference.
 - [vim-one](https://github.com/rakr/vim-one) - I used the code of airline autoload as a reference.
 
-## Articles
-
-- Trending #1 in Reddit/r/unixporn: [link](https://www.reddit.com/r/unixporn/comments/jo36fx/rectangle_i_created_a_new_color_theme_which_is/)
-- Trending #1 in Reddit/r/vim: [link](https://www.reddit.com/r/vim/comments/k2quxw/created_a_new_theme_ellyvim_which_is_brown_and)
