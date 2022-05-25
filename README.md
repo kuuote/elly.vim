@@ -58,8 +58,7 @@ set below in coc-settings.json
 - [elly-VSCode](https://github.com/ulwlu/elly-vscode)
 - [elly-tmux](https://github.com/ulwlu/elly-tmux)
 - [elly-kitty](https://github.com/ulwlu/elly-kitty) - This is made by [Benoit Pingris](https://github.com/BenoitPingris).
-- [elly-simple-bar](https://github.com/ulwlu/elly-simple-bar)
-- [elly-chrome](https://github.com/ulwlu/elly-chrome)
+- [elly-chrome](https://chrome.google.com/webstore/detail/elly-theme/bcgeoaoekdiakmhobofhbdnpeibbhaom)
 - [tilix-elly](https://github.com/HexHelix-xx/tilix-elly) - This is made by [Nirna Kajanovszki](https://github.com/HexHelix-xx).
 - [hyper-elly](https://github.com/ciscohack/hyper-elly) - This is maintained by [ciscohack](https://github.com/ciscohack).
 
